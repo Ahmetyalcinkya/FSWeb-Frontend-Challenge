@@ -25,5 +25,7 @@
   "project4desc": "HTML, CSS ve JavaScript kullanarak oluşturduğum restoran web sitesi, restoranın menüsünü ve iletişim bilgilerini anlaşılır bir şekilde sunuyor. Duyarlı tasarımı, her tür cihazda iyi görünmesini sağlar.",
   "project5desc": "Bu projede hazırladığım bölümler, yazılım yolculuğumda kaydırmalı gösterim, duyarlı tasarım ve tümü HTML, CSS ve JavaScript kullanılarak geliştirilen form öğelerinin birleşimini içeren ilk bölümlerdir.",
 
-  "view": "Siteye Git"
+  "view": "Siteye Git",
+  "sendMessage": "Bana mesaj gönder!",
+  "question": "Bir sorunuz veya öneriniz mi var, yoksa sadece merhaba mı demek istiyorsunuz? Devam edin."
 }

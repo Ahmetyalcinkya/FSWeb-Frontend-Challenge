@@ -25,5 +25,7 @@
   "project4desc": "The restaurant website I created using HTML, CSS, and JavaScript presents the restaurant's menu and contact information in a clear manner. Its responsive design ensures it looks good on all types of devices.",
   "project5desc": "In this project, the sections I've prepared are the first in my software journey to feature scroll reveal, responsive design, and a combination of form elements all developed using HTML, CSS, and JavaScript.",
 
-  "view": "View Site"
+  "view": "View Site",
+  "sendMessage": "Send me a message!",
+  "question": "Got a question or proposal, or just want to say hello? Go ahead."
 }
