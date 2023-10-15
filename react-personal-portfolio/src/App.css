@@ -36,3 +36,25 @@
     transform: rotate(360deg);
   }
 }
+
+/* CUSTOM SCROLLBAR */
+
+::-webkit-scrollbar {
+  width: 0.5rem;
+}
+::-webkit-scrollbar {
+  height: 0.25rem;
+}
+::-webkit-scrollbar {
+  background: #fff;
+}
+::-webkit-scrollbar-track {
+  background: #cbf281;
+}
+::-webkit-scrollbar-thumb {
+  background: #8f88ff;
+  border-radius: 1rem;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #b0aafa;
+}

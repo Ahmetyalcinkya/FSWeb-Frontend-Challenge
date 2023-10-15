@@ -29,8 +29,17 @@
 .dark .dark-text-primary {
   @apply text-[#CBF281];
 }
+.bg-tertiary {
+  @apply bg-[#8173DA];
+}
+.text-tertiary {
+  @apply text-[#8F88FF];
+}
 .dark .dark-text-secondary {
   @apply text-[#8F88FF];
+}
+.dark .dark-bg-tertiary {
+  @apply bg-[#8F88FF];
 }
 
 /* header */
@@ -65,5 +74,28 @@
 }
 
 /* projects */
+
+.project-img {
+  @apply w-[22.5rem] h-[17.5rem] rounded-l-xl;
+}
+
+.project-div {
+  @apply w-full rounded-xl flex bg-white dark:bg-[#252128] shadow-lg;
+}
+.project-description {
+  @apply flex flex-col justify-around text-left py-3 px-6;
+}
+.project-h4 {
+  @apply font-inter font-bold text-3xl leading-8 text-primary dark-text-secondary;
+}
+.project-p {
+  @apply font-inter font-normal text-base leading-5 text-black dark:text-white;
+}
+.project-h6 {
+  @apply font-inter font-medium text-sm leading-4 rounded-3xl px-4 py-2 mr-4 text-white light-primary;
+}
+.project-button {
+  @apply font-inter font-medium text-base leading-4 underline underline-offset-4 mr-4 text-black;
+}
 
 /* footer */

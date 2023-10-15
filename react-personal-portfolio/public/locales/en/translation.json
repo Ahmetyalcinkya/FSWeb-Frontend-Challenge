@@ -10,5 +10,20 @@
   "preferred": "Preferred Role:",
   "educationalStatus": "Amasya University, Urban Design, 2023",
   "aboutMe": "About Me",
-  "description": "I'm constantly working on improving myself with the goal of becoming a better Full Stack Developer. I graduated from Amasya University with a degree in Urban Design in 2023. After my graduation, I received 960 hours of FrontEnd and BackEnd training through 78 different projects at Workintech. I am a diligent, fast learner with strong analytical thinking skills, and I place great importance on teamwork. I continuously conduct research to enhance my knowledge in the field of software development."
+  "description": "I'm constantly working on improving myself with the goal of becoming a better Full Stack Developer. I graduated from Amasya University with a degree in Urban Design in 2023. After my graduation, I received 960 hours of FrontEnd and BackEnd training through 78 different projects at Workintech. I am a diligent, fast learner with strong analytical thinking skills, and I place great importance on teamwork. I continuously conduct research to enhance my knowledge in the field of software development.",
+  "projects": "Projects",
+
+  "project1": "E-commerce Website",
+  "project2": "Technological Dishes",
+  "project3": "Weather App",
+  "project4": "TestingLab Restaurant",
+  "project5": "Personal Portfolio",
+
+  "project1desc": "For the e-commerce website, the front end was developed using React, and the back end was built using Java. It allows users to create accounts, add products to the cart, and complete secure payment transactions. User authentication and session management were implemented using JWT (JSON Web Token), prioritizing security and user experience.",
+  "project2desc": "The 'SPA' created with React incorporates various technologies actively used in React projects. Additionally, thanks to the user-friendly interface, the ordering process can be tracked step by step.",
+  "project3desc": "The weather application was created using Vanilla JavaScript, and weather data was retrieved from the OpenWeatherMap API. It allows users to query weather information for any city, providing a user-friendly interface for quick and easy use.",
+  "project4desc": "The restaurant website I created using HTML, CSS, and JavaScript presents the restaurant's menu and contact information in a clear manner. Its responsive design ensures it looks good on all types of devices.",
+  "project5desc": "In this project, the sections I've prepared are the first in my software journey to feature scroll reveal, responsive design, and a combination of form elements all developed using HTML, CSS, and JavaScript.",
+
+  "view": "View Site"
 }
