@@ -3,6 +3,7 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { t } from "i18next";
 import React from "react";
 import ProfilePic from "../Assets/profile.png";
+import Animation from "../Compounds/TypeAnimation";
 
 const Header = () => {
   const goToGitHub = () => {
@@ -28,8 +29,8 @@ const Header = () => {
           </h4>
           <div className="w-[60rem] h-[23.5rem] flex justify-between">
             <div className="w-[33rem] h-[23.5rem] flex flex-col justify-around">
-              <h3 className="font-inter font-bold text-5xl text-left text-secondary ">
-                {t("header")}
+              <h3 className="text-left h-16">
+                <Animation />
               </h3>
               <p className="font-inter text-white text-2xl leading-7 text-left">
                 {t("about")}
