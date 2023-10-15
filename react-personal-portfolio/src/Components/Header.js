@@ -1,9 +1,10 @@
 import { faGithub, faLinkedin } from "@fortawesome/free-brands-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { t } from "i18next";
-import React from "react";
+import React, { useContext } from "react";
 import ProfilePic from "../Assets/profile.png";
 import Animation from "../Compounds/TypeAnimation";
+import { SwitchContext } from "../Contexts/SwitchContext";
 
 const Header = () => {
   const goToGitHub = () => {
@@ -17,8 +18,13 @@ const Header = () => {
     window.open(linkedIn, "_blank");
   };
 
+  const { toggleTheme } = useContext(SwitchContext);
+
   return (
     <div className="w-full h-[42rem] relative light-primary flex dark: dark-primary">
+      <button onClick={toggleTheme} className="absolute top-7 right-60 z-20">
+        toggledarkmode
+      </button>
       <div className="absolute right-0 light-secondary w-[27rem] h-full dark: dark-secondary">
         {/* pageWidth = 100% ? w-1/3 : [27rem] */}
       </div>
