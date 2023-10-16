@@ -29,5 +29,20 @@
 
   "view": "View Site",
   "sendMessage": "Send me a message!",
-  "question": "Got a question or proposal, or just want to say hello? Go ahead."
+  "question": "Got a question or proposal, or just want to say hello? Go ahead.",
+
+  "toast1": "Welcome!",
+  "toast2": "You are being redirected to the form page!",
+
+  "formName": "Name",
+  "formSurName": "Surname",
+  "formEmail": "E-mail",
+
+  "formWarning": "Please enter your name.",
+  "formWarning2": "Please enter your surname.",
+  "formWarning3": "Please enter a valid email address.",
+  "formWarning4": "Please enter your email.",
+  "formWarning5": "Phone number must be more than 8 digits.",
+  "formWarning6": "You must add a subject to your message.",
+  "formWarning7": "Your message must be more than 30 characters and less than 150 characters."
 }

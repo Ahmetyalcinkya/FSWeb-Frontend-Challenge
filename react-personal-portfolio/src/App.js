@@ -3,10 +3,11 @@ import { Route } from "react-router-dom";
 import HomePage from "./Pages/HomePage";
 import FormPage from "./Pages/FormPage";
 
-import "./App.css";
 import { ToastContainer } from "react-toastify";
 import SwitchContextProvider from "./Contexts/SwitchContext";
 import LangContextProvider from "./Contexts/LanguageContext";
+import "./App.css";
+import "react-toastify/dist/ReactToastify.css";
 
 function App() {
   return (

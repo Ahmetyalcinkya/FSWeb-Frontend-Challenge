@@ -29,5 +29,20 @@
 
   "view": "Siteye Git",
   "sendMessage": "Bana mesaj gönder!",
-  "question": "Bir sorunuz veya öneriniz mi var, yoksa sadece merhaba mı demek istiyorsunuz? Devam edin."
+  "question": "Bir sorunuz veya öneriniz mi var, yoksa sadece merhaba mı demek istiyorsunuz? Devam edin.",
+
+  "toast1": "Hoşgeldiniz!",
+  "toast2": "Form sayfasına yönlendiriliyorsunuz!",
+
+  "formName": "İsim",
+  "formSurName": "Soyisim",
+  "formEmail": "E-mail",
+
+  "formWarning": "Lütfen isminizi giriniz.",
+  "formWarning2": "Lütfen soyisminizi giriniz.",
+  "formWarning3": "Lütfen geçerli bir mail adresi giriniz.",
+  "formWarning4": "Lütfen mail adresinizi giriniz.",
+  "formWarning5": "Telefon numaranız 8 haneden fazla olmalıdır.",
+  "formWarning6": "Mesajınıza konu eklemelisiniz.",
+  "formWarning7": "Mesajınız 30 karakterden fazla, 150 karakterden az olmalıdır."
 }

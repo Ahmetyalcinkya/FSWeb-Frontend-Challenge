@@ -1,9 +1,11 @@
 import { faGithub, faLinkedin } from "@fortawesome/free-brands-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { t } from "i18next";
-import React, { useContext } from "react";
+import React, { useContext, useEffect } from "react";
 import ProfilePic from "../Assets/profile.png";
 import Animation from "../Compounds/TypeAnimation";
+import CustomizedSwitches from "../Compounds/SwitchCompound";
+import { toast } from "react-toastify";
 import { SwitchContext } from "../Contexts/SwitchContext";
 
 const Header = () => {
@@ -18,13 +20,39 @@ const Header = () => {
     window.open(linkedIn, "_blank");
   };
 
-  const { toggleTheme } = useContext(SwitchContext);
+  const { theme } = useContext(SwitchContext);
+
+  useEffect(() => {
+    if (theme === "light") {
+      toast(`${t("toast1")}`, {
+        position: "top-right",
+        autoClose: 3000,
+        hideProgressBar: false,
+        closeOnClick: true,
+        pauseOnHover: true,
+        draggable: true,
+        progress: undefined,
+        theme: "dark",
+      });
+    } else {
+      toast(`${t("toast1")}`, {
+        position: "top-right",
+        autoClose: 3000,
+        hideProgressBar: false,
+        closeOnClick: true,
+        pauseOnHover: true,
+        draggable: true,
+        progress: undefined,
+        theme: "light",
+      });
+    }
+  }, []);
 
   return (
     <div className="w-full h-[42rem] relative light-primary flex dark: dark-primary">
-      <button onClick={toggleTheme} className="absolute top-7 right-60 z-20">
-        toggledarkmode
-      </button>
+      <div className="absolute top-4 right-72 z-20">
+        <CustomizedSwitches />
+      </div>
       <div className="absolute right-0 light-secondary w-[27rem] h-full dark: dark-secondary">
         {/* pageWidth = 100% ? w-1/3 : [27rem] */}
       </div>
