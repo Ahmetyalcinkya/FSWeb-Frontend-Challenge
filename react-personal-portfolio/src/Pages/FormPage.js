@@ -35,7 +35,7 @@ const FormPage = () => {
     email: Yup.string()
       .email(`${t("formWarning3")}`)
       .required(`${t("formWarning4")}`),
-    mobileNumber: Yup.number().min(8, `${t("formWarning5")}`),
+    mobileNumber: Yup.string().min(8, `${t("formWarning5")}`),
     mailSubject: Yup.string().required(`${t("formWarning6")}`),
     message: Yup.string().min(30, `${t("formWarning7")}`),
   });
@@ -69,6 +69,9 @@ const FormPage = () => {
 
   return (
     <div className="w-[90rem] h-screen relative light-primary dark: dark-primary flex flex-col justify-center items-center">
+      <h3 className="absolute top-20 left-60 font-inter font-bold text-5xl leading-[3.75rem] text-secondary dark: dark-text-secondary">
+        {t("formHeader")}
+      </h3>
       <div className="absolute top-4 right-72 z-20">
         <CustomizedSwitches />
       </div>

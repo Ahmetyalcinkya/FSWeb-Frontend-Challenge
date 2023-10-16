@@ -34,9 +34,14 @@
   "toast1": "Hoşgeldiniz!",
   "toast2": "Form sayfasına yönlendiriliyorsunuz!",
 
-  "formName": "İsim",
-  "formSurName": "Soyisim",
-  "formEmail": "E-mail",
+  "formHeader": "Bana Ulaşın!",
+
+  "formName": "İsminizi Giriniz...",
+  "formSurName": "Soyisminizi Giriniz...",
+  "formEmail": "E-mail adresinizi Giriniz...",
+  "formNumber": "Telefon Numaranızı Giriniz...",
+  "formSubject": "E-mail Konusu Giriniz...",
+  "formMessage": "Mesajınız...",
 
   "formWarning": "Lütfen isminizi giriniz.",
   "formWarning2": "Lütfen soyisminizi giriniz.",
@@ -44,5 +49,6 @@
   "formWarning4": "Lütfen mail adresinizi giriniz.",
   "formWarning5": "Telefon numaranız 8 haneden fazla olmalıdır.",
   "formWarning6": "Mesajınıza konu eklemelisiniz.",
-  "formWarning7": "Mesajınız 30 karakterden fazla, 150 karakterden az olmalıdır."
+  "formWarning7": "Mesajınız 30 karakterden fazla olmalıdır.",
+  "formWarning8": "GÖNDER!"
 }

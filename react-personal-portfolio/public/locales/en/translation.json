@@ -34,9 +34,14 @@
   "toast1": "Welcome!",
   "toast2": "You are being redirected to the form page!",
 
-  "formName": "Name",
-  "formSurName": "Surname",
-  "formEmail": "E-mail",
+  "formHeader": "Contact Me!",
+
+  "formName": "Type your name...",
+  "formSurName": "Type your Surname...",
+  "formEmail": "Type your E-mail...",
+  "formNumber": "Type your Phone Number...",
+  "formSubject": "Type your E-mail Subject...",
+  "formMessage": "Type your Your Message...",
 
   "formWarning": "Please enter your name.",
   "formWarning2": "Please enter your surname.",
@@ -44,5 +49,6 @@
   "formWarning4": "Please enter your email.",
   "formWarning5": "Phone number must be more than 8 digits.",
   "formWarning6": "You must add a subject to your message.",
-  "formWarning7": "Your message must be more than 30 characters and less than 150 characters."
+  "formWarning7": "Your message must be more than 30 characters.",
+  "formWarning8": "SEND!"
 }

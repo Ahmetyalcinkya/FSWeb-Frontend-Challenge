@@ -110,8 +110,14 @@
 /* FormPage */
 
 .form-label {
-  @apply;
+  @apply flex flex-col justify-around items-center bg-none text-[#3730A3] font-inter font-bold text-base w-[15rem] h-20;
+}
+.form-span {
+  @apply bg-none text-red-700 font-inter font-light text-sm;
 }
 .form-input {
-  @apply;
+  @apply placeholder:text-[#3730A3] px-3 py-2 rounded-3xl text-base;
+}
+.form-div {
+  @apply flex justify-around items-center w-[60rem];
 }
