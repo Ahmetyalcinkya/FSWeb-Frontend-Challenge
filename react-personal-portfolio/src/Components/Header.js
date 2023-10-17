@@ -51,7 +51,7 @@ const Header = () => {
   return (
     <div className="w-full h-[42rem] relative light-primary flex dark: dark-primary">
       <div className="absolute top-4 right-72 z-20">
-        <CustomizedSwitches />
+        <CustomizedSwitches checked={theme} />
       </div>
       <div className="absolute right-0 light-secondary w-[27rem] h-full dark: dark-secondary">
         {/* pageWidth = 100% ? w-1/3 : [27rem] */}

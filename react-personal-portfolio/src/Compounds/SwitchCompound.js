@@ -53,7 +53,7 @@ const MaterialUISwitch = styled(Switch)(({ theme }) => ({
 }));
 
 export default function CustomizedSwitches() {
-  const { toggleTheme } = React.useContext(SwitchContext);
+  const { toggleTheme, theme } = React.useContext(SwitchContext);
   return (
     <FormGroup>
       <FormControlLabel

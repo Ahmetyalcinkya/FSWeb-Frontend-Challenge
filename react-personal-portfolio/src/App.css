@@ -58,3 +58,22 @@
 ::-webkit-scrollbar-thumb:hover {
   background: #b0aafa;
 }
+.dark ::-webkit-scrollbar {
+  width: 0.5rem;
+}
+.dark ::-webkit-scrollbar {
+  height: 0.25rem;
+}
+.dark ::-webkit-scrollbar {
+  background: #fff;
+}
+.dark ::-webkit-scrollbar-track {
+  background: #252128;
+}
+.dark ::-webkit-scrollbar-thumb {
+  background: #8f88ff;
+  border-radius: 1rem;
+}
+.dark ::-webkit-scrollbar-thumb:hover {
+  background: #8f88ff;
+}

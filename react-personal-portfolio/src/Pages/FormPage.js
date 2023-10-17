@@ -55,7 +55,7 @@ const FormPage = () => {
     axios
       .post("https://reqres.in/api/workintech", formData)
       .then((res) => {
-        localStorage.setItem(formData);
+        localStorage.setItem("form", JSON.stringify(formData));
         setFormData(initialFormData);
       })
       .catch((err) => console.log(err));
@@ -68,8 +68,8 @@ const FormPage = () => {
   }, [formData]);
 
   return (
-    <div className="w-[90rem] h-screen relative light-primary dark: dark-primary flex flex-col justify-center items-center">
-      <h3 className="absolute top-20 left-60 font-inter font-bold text-5xl leading-[3.75rem] text-secondary dark: dark-text-secondary">
+    <div className="total-width h-screen relative light-primary dark: dark-primary flex flex-col justify-center items-center">
+      <h3 className="absolute top-5 font-inter font-bold text-5xl leading-[3.75rem] text-secondary dark: dark-text-secondary">
         {t("formHeader")}
       </h3>
       <div className="absolute top-4 right-72 z-20">
@@ -90,7 +90,6 @@ const FormPage = () => {
         </button>
       </div>
       <div className="absolute w-[27rem] h-screen light-secondary right-0 top-0 z-0 dark: dark-secondary"></div>
-
       <FormCompound
         changeHandler={changeHandler}
         submitHandler={submitHandler}

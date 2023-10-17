@@ -15,7 +15,18 @@ const SwitchContextProvider = ({ children }) => {
 
   const toggleTheme = () => {
     setTheme(theme === "dark" ? "light" : "dark");
+    localStorage.setItem("darkMode", theme);
   };
+
+  useEffect(() => {
+    const darkModeSelection = localStorage.getItem("darkMode") === "light";
+
+    if (darkModeSelection) {
+      document.documentElement.classList.remove("dark");
+    } else {
+      document.documentElement.classList.add("dark");
+    }
+  }, []);
 
   return (
     <SwitchContext.Provider value={{ theme, setTheme, toggleTheme }}>
