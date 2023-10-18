@@ -5,6 +5,9 @@ import axios from "axios";
 import FormCompound from "../Compounds/FormCompound";
 import * as Yup from "yup";
 import { t } from "i18next";
+import { useHistory } from "react-router-dom";
+import { toast } from "react-toastify";
+import { SwitchContext } from "../Contexts/SwitchContext";
 
 const initialFormData = {
   name: "",
@@ -16,7 +19,9 @@ const initialFormData = {
 };
 
 const FormPage = () => {
+  const history = useHistory();
   const { toggleLanguage } = useContext(LangContext);
+  const { theme } = useContext(SwitchContext);
 
   const [formData, setFormData] = useState(initialFormData);
   const [formErr, setFormErr] = useState({
@@ -50,6 +55,38 @@ const FormPage = () => {
       .catch((err) => setFormErr({ ...formErr, [name]: err.errors[0] }));
   };
 
+  const redirectDelay = () => {
+    setTimeout(() => {
+      history.push("/");
+    }, 2000);
+  };
+
+  const showNotification = () => {
+    if (theme === "light") {
+      toast.success(`${t("toast3")}`, {
+        position: "top-center",
+        autoClose: 2000,
+        hideProgressBar: false,
+        closeOnClick: true,
+        pauseOnHover: true,
+        draggable: true,
+        progress: undefined,
+        theme: "dark",
+      });
+    } else {
+      toast.success(`${t("toast3")}`, {
+        position: "top-center",
+        autoClose: 2000,
+        hideProgressBar: false,
+        closeOnClick: true,
+        pauseOnHover: true,
+        draggable: true,
+        progress: undefined,
+        theme: "light",
+      });
+    }
+  };
+
   const submitHandler = (e) => {
     e.preventDefault();
     axios
@@ -59,6 +96,8 @@ const FormPage = () => {
         setFormData(initialFormData);
       })
       .catch((err) => console.log(err));
+    redirectDelay();
+    showNotification();
   };
 
   useEffect(() => {

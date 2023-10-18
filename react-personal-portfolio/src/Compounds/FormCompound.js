@@ -98,7 +98,7 @@ const FormCompound = (props) => {
         <div className="flex flex-col justify-center items-center gap-y-2">
           <label className="w-full h-24 flex flex-col justify-center items-center">
             <textarea
-              className="w-96 h-24 rounded-xl p-2 placeholder:text-[#3730A3] placeholder:text-semibold"
+              className="form-textarea dark: dark-form-textarea"
               type="text"
               name="message"
               value={formData.message}
