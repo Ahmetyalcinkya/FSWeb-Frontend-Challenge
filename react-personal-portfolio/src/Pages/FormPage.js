@@ -128,7 +128,7 @@ const FormPage = () => {
           EN
         </button>
       </div>
-      <div className="absolute mt-4 sm:mt-0 w-full h-28 sm:w-[10rem] sm:h-screen xl:w-[27rem] light-secondary right-0 top-0 z-0 dark: dark-secondary"></div>
+      <div className="absolute w-full h-28 sm:w-[10rem] sm:h-screen xl:w-[27rem] light-secondary right-0 top-0 z-0 dark: dark-secondary"></div>
       <FormCompound
         changeHandler={changeHandler}
         submitHandler={submitHandler}
