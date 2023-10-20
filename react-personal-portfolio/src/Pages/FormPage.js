@@ -108,7 +108,7 @@ const FormPage = () => {
 
   return (
     <div className="w-full total-width h-screen relative light-primary dark: dark-primary flex flex-col justify-center items-center">
-      <h3 className="xl:absolute top-5 font-inter font-bold text-5xl leading-[3.75rem] text-secondary dark: dark-text-secondary">
+      <h3 className="mt-4 sm:mt-0 xl:absolute top-5 font-inter font-bold text-5xl leading-[3.75rem] text-secondary dark: dark-text-secondary">
         {t("formHeader")}
       </h3>
       <div className="absolute right-0 top-4 sm:right-6 xl:right-72 z-20">
