@@ -107,14 +107,14 @@ const FormPage = () => {
   }, [formData]);
 
   return (
-    <div className="total-width h-screen relative light-primary dark: dark-primary flex flex-col justify-center items-center">
-      <h3 className="absolute top-5 font-inter font-bold text-5xl leading-[3.75rem] text-secondary dark: dark-text-secondary">
+    <div className="w-full total-width h-screen relative light-primary dark: dark-primary flex flex-col justify-center items-center">
+      <h3 className="xl:absolute top-5 font-inter font-bold text-5xl leading-[3.75rem] text-secondary dark: dark-text-secondary">
         {t("formHeader")}
       </h3>
-      <div className="absolute top-4 right-72 z-20">
+      <div className="absolute right-0 top-4 sm:right-6 xl:right-72 z-20">
         <CustomizedSwitches />
       </div>
-      <div className="absolute top-5 right-[24.1rem] z-20">
+      <div className="absolute top-5 right-20 sm:right-28 xl:right-[24.1rem] z-20">
         <button
           onClick={() => toggleLanguage("tr")}
           className="lang-btn dark: dark-btn hover:bg-[#CBF281]"
@@ -128,7 +128,7 @@ const FormPage = () => {
           EN
         </button>
       </div>
-      <div className="absolute w-[27rem] h-screen light-secondary right-0 top-0 z-0 dark: dark-secondary"></div>
+      <div className="absolute w-full h-28 sm:w-[10rem] sm:h-screen xl:w-[27rem] light-secondary right-0 top-0 z-0 dark: dark-secondary"></div>
       <FormCompound
         changeHandler={changeHandler}
         submitHandler={submitHandler}

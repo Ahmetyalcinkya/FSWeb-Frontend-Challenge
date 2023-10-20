@@ -4,10 +4,10 @@ import React from "react";
 const FormCompound = (props) => {
   const { formData, changeHandler, submitHandler, formErr, isValid } = props;
   return (
-    <div className="w-[45rem] flex items-center justify-center border z-20 py-5 rounded-3xl relative light-secondary dark: dark-secondary border-[#3730A3] dark: border-whitea">
+    <div className="w-[20rem] sm:w-[35rem] xl:w-[45rem] flex items-center justify-center border z-20 py-5 rounded-3xl relative light-secondary dark: dark-secondary border-[#3730A3] dark:border-white">
       <form
         onSubmit={submitHandler}
-        className="w-96 flex flex-col items-center justify-center z-20 gap-y-4"
+        className="w-60 xl:w-96 flex flex-col items-center justify-center z-20 gap-y-4"
       >
         <label className="form-label">
           <input

@@ -5,21 +5,20 @@ import Project3 from "../Assets/weather.png";
 import Project4 from "../Assets/restorant.png";
 import Project5 from "../Assets/portfolio html.png";
 import { t } from "i18next";
-import { Link } from "react-router-dom";
 
 const ProjectsCompound = () => {
   return (
-    <div className="flex flex-col gap-y-8 pt-8 pb-16">
+    <div className="flex flex-col items-center gap-y-8 pt-8 pb-16">
       <div className="project-div">
         <img src={Project1} alt="projectImg" className="project-img" />
         <div className="project-description">
-          <h4 className="project-h4">{t("project1")}</h4>
+          <h4 className="project-h4 ">{t("project1")}</h4>
           <p className="project-p">{t("project1desc")}</p>
           <div className="flex">
             <h6 className="project-h6 dark: dark-bg-tertiary">React</h6>
             <h6 className="project-h6 dark: dark-bg-tertiary">Redux</h6>
             <h6 className="project-h6 dark: dark-bg-tertiary">Java</h6>
-            <h6 className="project-h6 dark: dark-bg-tertiary">Tailwind CSS</h6>
+            {/* <h6 className="project-h6 dark: dark-bg-tertiary">Tailwind CSS</h6> */}
           </div>
           <div className="flex">
             <a

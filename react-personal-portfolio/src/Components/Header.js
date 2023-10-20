@@ -49,20 +49,20 @@ const Header = () => {
   }, []);
 
   return (
-    <div className="w-full h-[42rem] relative light-primary flex dark: dark-primary">
-      <div className="absolute top-4 right-72 z-20">
+    <div className="w-full lg:h-[42rem] relative light-primary flex dark: dark-primary">
+      <div className="absolute top-16 lg:top-4 right-0 lg:right-72 z-20">
         <CustomizedSwitches checked={theme} />
       </div>
-      <div className="absolute right-0 light-secondary w-[27rem] h-full dark: dark-secondary">
+      <div className="absolute right-0 light-secondary w-full h-[7rem] lg:w-[27rem] lg:h-full dark: dark-secondary">
         {/* pageWidth = 100% ? w-1/3 : [27rem] */}
       </div>
-      <div className=" m-auto flex justify-center">
-        <div className="w-[60rem] flex flex-col justify-around ">
+      <div className="pt-32 px-2 lg:px-0 lg:pt-0 m-auto flex justify-center">
+        <div className="w-full lg:w-[60rem] flex flex-col justify-around ">
           <h4 className="text-bold font-inter text-3xl text-secondary text-left h-20">
             Ahmet Can Yalçınkaya
           </h4>
-          <div className="w-[60rem] h-[23.5rem] flex justify-between">
-            <div className="w-[33rem] h-[23.5rem] flex flex-col justify-around">
+          <div className="w-full lg:w-[60rem] lg:h-[23.5rem] flex flex-col lg:flex-row items-center justify-between">
+            <div className="w-full flex flex-col justify-around gap-y-16 items-center z-20 lg:z-0 lg:gap-y-0 lg:items-stretch lg:w-[33rem] lg:h-[23.5rem]">
               <h3 className="text-left h-16">
                 <Animation />
               </h3>

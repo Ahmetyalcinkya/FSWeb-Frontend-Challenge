@@ -10,8 +10,8 @@ import Pic6 from "../Assets/figma.jpg";
 const Skills = () => {
   return (
     <div className="w-full bg-white dark:bg-[#252128]">
-      <div className="w-[60rem] py-20 m-auto flex justify-between">
-        <h3 className="font-inter font-bold text-5xl leading-[3.75rem] text-primary dark: dark-text-primary">
+      <div className="lg:w-[60rem] py-20 m-auto flex flex-col lg:flex-row justify-center items-center lg:items-start lg:justify-between">
+        <h3 className="pb-10 lg:pb-0 font-inter font-bold text-5xl leading-[3.75rem] text-primary dark: dark-text-primary">
           {t("skills")}
         </h3>
         <div className="w-72 h-[27rem] flex flex-col justify-between">

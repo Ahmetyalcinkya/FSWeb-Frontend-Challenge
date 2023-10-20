@@ -70,20 +70,20 @@
 /* profile */
 
 .info-div {
-  @apply w-[18.75rem] h-[18.125rem] text-left flex justify-between flex-col;
+  @apply w-[18.75rem] h-[18.125rem] pb-6 lg:pb-0 text-left flex justify-between flex-col;
 }
 
 /* projects */
 
 .project-img {
-  @apply w-[22.5rem] h-[17.5rem] rounded-l-xl;
+  @apply w-[22.5rem] h-[17.5rem] rounded-full lg:rounded-none lg:rounded-l-xl;
 }
 
 .project-div {
-  @apply w-full rounded-xl flex bg-white dark:bg-[#252128] shadow-lg;
+  @apply w-2/3 py-5 lg:py-0 items-center lg:items-stretch lg:w-full rounded-xl flex flex-col lg:flex-row bg-white dark:bg-[#252128] shadow-lg;
 }
 .project-description {
-  @apply flex flex-col justify-around text-left py-3 px-6;
+  @apply flex flex-col justify-around gap-y-8 lg:gap-y-0 text-left py-3 px-6;
 }
 .project-h4 {
   @apply font-inter font-bold text-3xl leading-8 text-primary dark-text-secondary;
@@ -131,8 +131,8 @@
   @apply bg-[#3730A3] text-white hover:bg-[#CBF281] hover:text-[#3730A3] hover:border-[#3730A3] border m-1 rounded-full py-1 px-2 ease-in duration-300;
 }
 .form-textarea {
-  @apply w-96 h-24 font-semibold bg-white text-[#3730A3] rounded-xl p-2 placeholder:text-[#3730A3] placeholder:font-normal;
+  @apply w-[15rem] sm:w-60 xl:w-96 h-24 font-semibold bg-white text-[#3730A3] rounded-xl p-2 placeholder:text-[#3730A3] placeholder:font-normal;
 }
 .dark .dark-form-textarea {
-  @apply w-96 h-24 font-semibold bg-[#171043] text-[#CBF281] rounded-xl p-2 placeholder:text-[#8F88FF] placeholder:font-normal;
+  @apply w-[15rem] sm:w-60 xl:w-96 h-24 font-semibold bg-[#171043] text-[#CBF281] rounded-xl p-2 placeholder:text-[#8F88FF] placeholder:font-normal;
 }

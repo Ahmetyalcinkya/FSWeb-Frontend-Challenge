@@ -3,12 +3,12 @@ import React from "react";
 
 const Profile = () => {
   return (
-    <div className="w-full h-[34.5rem] light-primary flex justify-center items-center dark: dark-primary">
-      <div className="flex flex-col justify-around w-[60rem] h-96">
+    <div className="w-full p-8 lg:p-0 lg:h-[34.5rem] light-primary flex justify-center items-center dark: dark-primary">
+      <div className="flex flex-col justify-around gap-y-4 sm:gap-y-0 sm:w-[60rem] sm:h-96">
         <h4 className="text-secondary font-bold text-5xl leading-[3rem] font-inter text-left">
           {t("profile")}
         </h4>
-        <div className="flex justify-between">
+        <div className="flex flex-col sm:flex-row justify-between">
           <div className="info-div">
             <h5 className="font-inter font-medium text-3xl text-white">
               {t("basicInformation")}

@@ -20,7 +20,7 @@ const HomePage = () => {
   return (
     <div className="relative">
       <Header />
-      <div className="absolute top-5 right-[24.1rem]">
+      <div className="absolute top-5 right-0 sm:right-5 lg:right-[24.1rem]">
         <button
           onClick={() => toggleLanguage("tr")}
           className="lang-btn dark: dark-btn hover:bg-[#CBF281]"
