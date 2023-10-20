@@ -50,7 +50,10 @@ const Header = () => {
 
   return (
     <div className="w-full lg:h-[42rem] relative light-primary flex dark: dark-primary">
-      <div className="absolute top-16 lg:top-4 right-0 lg:right-72 z-20">
+      <div
+        data-cy="switch-btn"
+        className="absolute top-16 lg:top-4 right-0 lg:right-72 z-20"
+      >
         <CustomizedSwitches checked={theme} />
       </div>
       <div className="absolute right-0 light-secondary w-full h-[7rem] lg:w-[27rem] lg:h-full dark: dark-secondary">
@@ -71,6 +74,7 @@ const Header = () => {
               </p>
               <div className="w-[17.5rem] h-14 flex justify-around items-center">
                 <button
+                  data-cy="git-btn"
                   onClick={goToGitHub}
                   className="light-header-button dark: dark-header-button"
                 >

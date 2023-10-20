@@ -55,6 +55,7 @@ const Footer = () => {
     <div className="w-full h-[28.5rem] flex justify-center items-center bg-white dark:bg-[#252128]">
       <div className="w-[30rem] h-72 flex flex-col justify-between">
         <button
+          data-cy="form-button"
           onClick={multipleFunc}
           className="font-inter font-bold text-4xl text-primary dark: dark-text-secondary"
         >

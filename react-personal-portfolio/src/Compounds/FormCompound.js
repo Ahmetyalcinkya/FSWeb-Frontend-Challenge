@@ -11,6 +11,7 @@ const FormCompound = (props) => {
       >
         <label className="form-label">
           <input
+            data-cy="name-input"
             className="form-input dark: dark-form-input"
             type="text"
             name="name"
@@ -29,6 +30,7 @@ const FormCompound = (props) => {
         </label>
         <label className="form-label">
           <input
+            data-cy="surname-input"
             className="form-input dark: dark-form-input"
             type="text"
             name="surname"
@@ -46,6 +48,7 @@ const FormCompound = (props) => {
         </label>
         <label className="form-label">
           <input
+            data-cy="email-input"
             className="form-input dark: dark-form-input"
             type="email"
             name="email"
@@ -63,6 +66,7 @@ const FormCompound = (props) => {
         </label>
         <label className="form-label">
           <input
+            data-cy="phone-input"
             className="form-input dark: dark-form-input"
             type="number"
             name="mobileNumber"
@@ -80,6 +84,7 @@ const FormCompound = (props) => {
         </label>
         <label className="form-label">
           <input
+            data-cy="subject-input"
             className="form-input dark: dark-form-input"
             type="text"
             name="mailSubject"
@@ -98,6 +103,7 @@ const FormCompound = (props) => {
         <div className="flex flex-col justify-center items-center gap-y-2">
           <label className="w-full h-24 flex flex-col justify-center items-center">
             <textarea
+              data-cy="message-input"
               className="form-textarea dark: dark-form-textarea"
               type="text"
               name="message"
@@ -114,6 +120,7 @@ const FormCompound = (props) => {
             )}
           </label>
           <button
+            data-cy="submit-btn"
             type="submit"
             disabled={!isValid}
             className="w-32 h-10 form-btn dark: dark-btn"
