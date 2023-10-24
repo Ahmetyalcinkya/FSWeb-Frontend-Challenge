@@ -57,7 +57,13 @@ export default function CustomizedSwitches() {
   return (
     <FormGroup>
       <FormControlLabel
-        control={<MaterialUISwitch sx={{ m: 1 }} onChange={toggleTheme} />}
+        control={
+          <MaterialUISwitch
+            sx={{ m: 1 }}
+            checked={theme === "dark" ? true : false}
+            onChange={toggleTheme}
+          />
+        }
       />
     </FormGroup>
   );

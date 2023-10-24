@@ -112,7 +112,7 @@ const FormPage = () => {
         {t("formHeader")}
       </h3>
       <div className="absolute right-0 top-4 sm:right-6 xl:right-72 z-20">
-        <CustomizedSwitches />
+        <CustomizedSwitches checked={theme} />
       </div>
       <div className="absolute top-5 right-20 sm:right-28 xl:right-[24.1rem] z-20">
         <button

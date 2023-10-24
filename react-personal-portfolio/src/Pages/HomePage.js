@@ -9,14 +9,6 @@ import { LangContext } from "../Contexts/LanguageContext";
 const HomePage = () => {
   const { toggleLanguage } = useContext(LangContext);
 
-  // const specialBtnList = document.querySelectorAll(".btn");
-  // specialBtnList.forEach((speacialBtn) => {
-  //   speacialBtn.addEventListener("click", () => {
-  //     document.querySelector(".special-btn")?.classList.remove("speacial-btn");
-  //     speacialBtn.classList.add("speacial-btn");
-  //   });
-  // });
-
   return (
     <div className="relative">
       <Header />
