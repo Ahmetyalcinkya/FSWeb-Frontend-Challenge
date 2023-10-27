@@ -22,7 +22,7 @@ const ProjectsCompound = () => {
           </div>
           <div className="flex">
             <a
-              href=""
+              href="https://e-commerce-site-steel.vercel.app/"
               target="_blank"
               className="project-button dark: dark-text-primary"
             >

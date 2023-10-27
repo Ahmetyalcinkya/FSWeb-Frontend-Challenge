@@ -51,5 +51,6 @@
   "formWarning5": "Phone number must be more than 8 digits.",
   "formWarning6": "You must add a subject to your message.",
   "formWarning7": "Your message must be more than 30 characters.",
-  "formWarning8": "SEND!"
+  "formWarning8": "SEND!",
+  "back": "HOME PAGE"
 }

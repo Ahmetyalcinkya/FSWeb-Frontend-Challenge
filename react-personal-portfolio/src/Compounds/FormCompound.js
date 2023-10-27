@@ -1,5 +1,8 @@
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { t } from "i18next";
 import React from "react";
+import { faAngleLeft } from "@fortawesome/free-solid-svg-icons";
+import { Link } from "react-router-dom";
 
 const FormCompound = (props) => {
   const { formData, changeHandler, submitHandler, formErr, isValid } = props;
@@ -9,6 +12,13 @@ const FormCompound = (props) => {
         onSubmit={submitHandler}
         className="w-60 xl:w-96 flex flex-col items-center justify-center z-20 gap-y-4"
       >
+        <Link
+          to="/"
+          className="w-36 flex justify-around items-center h-10 form-btn dark: dark-btn"
+        >
+          <FontAwesomeIcon icon={faAngleLeft} />
+          {t("back")}
+        </Link>
         <label className="form-label">
           <input
             data-cy="name-input"
