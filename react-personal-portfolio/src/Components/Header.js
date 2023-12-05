@@ -1,4 +1,5 @@
 import { faGithub, faLinkedin } from "@fortawesome/free-brands-svg-icons";
+import { faDownload } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { t } from "i18next";
 import React, { useContext, useEffect } from "react";
@@ -7,6 +8,7 @@ import Animation from "../Compounds/TypeAnimation";
 import CustomizedSwitches from "../Compounds/SwitchCompound";
 import { toast } from "react-toastify";
 import { SwitchContext } from "../Contexts/SwitchContext";
+import resume from "../Assets/AHMET-CAN-YALÇINKAYA-CV.pdf";
 
 const Header = () => {
   const goToGitHub = () => {
@@ -72,7 +74,7 @@ const Header = () => {
               <p className="font-inter text-white text-2xl leading-7 text-left">
                 {t("about")}
               </p>
-              <div className="w-[17.5rem] h-14 flex justify-around items-center">
+              <div className="w-[27rem] h-14 flex justify-around items-center">
                 <button
                   data-cy="git-btn"
                   onClick={goToGitHub}
@@ -88,6 +90,14 @@ const Header = () => {
                   <FontAwesomeIcon icon={faLinkedin} size="xl" />
                   LinkedIn
                 </button>
+                <a
+                  href={resume}
+                  download="Resume"
+                  className="light-header-button dark: dark-header-button text-sm"
+                >
+                  <FontAwesomeIcon icon={faDownload} size="xl" />
+                  Download CV
+                </a>
               </div>
             </div>
             <div className="w-[22rem] h-[23.5rem] z-20 flex justify-center items-center">
