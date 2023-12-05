@@ -74,7 +74,7 @@ const Header = () => {
               <p className="font-inter text-white text-2xl leading-7 text-left">
                 {t("about")}
               </p>
-              <div className="w-[27rem] h-14 flex justify-around items-center">
+              <div className="sm:w-[27rem] h-14 flex justify-around items-center">
                 <button
                   data-cy="git-btn"
                   onClick={goToGitHub}
@@ -96,7 +96,7 @@ const Header = () => {
                   className="light-header-button dark: dark-header-button text-sm"
                 >
                   <FontAwesomeIcon icon={faDownload} size="xl" />
-                  Download CV
+                  {t("cv")}
                 </a>
               </div>
             </div>
