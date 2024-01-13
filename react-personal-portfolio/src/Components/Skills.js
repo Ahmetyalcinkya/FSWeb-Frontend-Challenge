@@ -4,8 +4,8 @@ import Pic1 from "../Assets/js-logo 1.png";
 import Pic2 from "../Assets/react.png";
 import Pic3 from "../Assets/redux.jpg";
 import Pic4 from "../Assets/java.png";
-import Pic5 from "../Assets/vscode.jpg";
-import Pic6 from "../Assets/figma.jpg";
+import Pic5 from "../Assets/spring.png";
+import Pic6 from "../Assets/postgresql.jpg";
 
 const Skills = () => {
   return (
@@ -35,11 +35,11 @@ const Skills = () => {
           </div>
           <div className="icon-div">
             <img src={Pic5} alt="" className="program-icon" />
-            <h4 className="program-name">VS CODE</h4>
+            <h4 className="program-name">SPRING</h4>
           </div>
           <div className="icon-div">
             <img src={Pic6} alt="" className="program-icon" />
-            <h4 className="program-name">FIGMA</h4>
+            <h4 className="program-name">POSTGRESQL</h4>
           </div>
         </div>
       </div>
